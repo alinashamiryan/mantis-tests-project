@@ -32,7 +32,6 @@ namespace mantis_tests_project
             {
                 return;
             }
-
             driver.FindElement(By.CssSelector("i.fa-gears")).Click();
             driver.FindElement(By.CssSelector("a[href='/mantisbt-2.25.2/manage_proj_page.php']")).Click();
         }
