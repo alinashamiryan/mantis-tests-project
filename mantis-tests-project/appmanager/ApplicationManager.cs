@@ -26,7 +26,6 @@ namespace mantis_tests_project
         protected LoginHelper loginHelper;
         protected NavigationHelper navigator;
         protected ProjectHelper projects;
-        protected APIHelper API;
 
         private static ThreadLocal<ApplicationManager> app = new ThreadLocal<ApplicationManager>();
 
@@ -37,7 +36,6 @@ namespace mantis_tests_project
             loginHelper = new LoginHelper(this);
             navigator = new NavigationHelper(this, baseURL);
             projects = new ProjectHelper(this);
-            API = new APIHelper(this);
         }
         ~ApplicationManager()
         {
